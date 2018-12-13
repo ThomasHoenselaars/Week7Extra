@@ -79,7 +79,6 @@ body {
 
   .main {
       grid-area: main;
-      
       display: grid;
       grid-gap: 1rem;
       grid-template-columns: repeat(4, 1fr);
@@ -90,6 +89,10 @@ body {
     "top-stories    special-edition     special-edition     featured"
     "top-stories    most-recent         most-recent         most-recent"
   }
+
+
+
+  
 
 
 .hero, 
@@ -103,8 +106,49 @@ body {
 }
   .hero {
       grid-area: hero;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-end;
+      padding: 1rem;
       
   }
+ .hero-content {
+        max-width: 450px;
+        min-height: 200px;
+    }
+
+
+  .hero__category {
+      color: #adadad;
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: bolder;
+  }
+
+  .hero__title {
+      font-size: 3rem;
+      color: white;
+      position: relative;
+  }
+
+  .hero__text::before {
+        position: absolute;
+       content: "";
+       height: 2px;
+       margin-top: -0.8rem;
+       background-color: white;
+       width: 2rem;
+
+       
+  }
+
+  .hero__text {
+      color: white;
+  }
+
+  .hero__link {
+    text-decoration: none;
+}
 
 .highlight {
     grid-area: highlight;
