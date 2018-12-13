@@ -37,6 +37,10 @@ body {
     font-size: 1.5em;
   }
 
+  a {
+      text-decoration: none;
+  }
+
   .header {
       grid-area: header;
       display: grid;
@@ -101,15 +105,20 @@ body {
 .special-edition, 
 .featured, 
 .most-recent {
+   
+}
+
+.block {
+    display: flex;
+    padding: 2rem;
     background: rgba(255, 255, 255, 0.95);
-      box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    flex-flow: column nowrap;
 }
   .hero {
       grid-area: hero;
-      display: flex;
-      flex-flow: column nowrap;
       justify-content: flex-end;
-      padding: 1rem;
+      padding: 2rem;
       
   }
  .hero-content {
@@ -131,29 +140,49 @@ body {
       position: relative;
   }
 
+  .hero__title:hover {
+      text-decoration: underline;
+  }
+
   .hero__text::before {
         position: absolute;
        content: "";
        height: 2px;
        margin-top: -0.8rem;
        background-color: white;
-       width: 2rem;
-
-       
+       width: 2rem;    
   }
 
   .hero__text {
       color: white;
   }
 
-  .hero__link {
-    text-decoration: none;
-}
 
 .highlight {
     grid-area: highlight;
-   
+    
+      justify-content: flex-end;
+      padding: 2rem;
 }
+
+
+
+.story__category {
+    color: #adadad;
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: bolder;
+}
+
+.highlight .story__text {
+    color: white;
+}
+
+.story__text:hover {
+    text-decoration: underline;
+}
+
+
 
 .top-stories {
     grid-area: top-stories;
