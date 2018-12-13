@@ -55,6 +55,7 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
+      
   }
 
   .navigation > ul {
@@ -63,6 +64,7 @@ body {
       padding: 0;
       display: flex;
       flex-flow: row wrap;
+      flex: 1 0 auto;
   }
 
  .nav-link {
@@ -357,5 +359,11 @@ p.story__text:hover {
         align-content: center;
         z-index: 1;
     }
+
+    .navigation {
+        margin-bottom: 20px;
+      
+    }
+    
 
 }
