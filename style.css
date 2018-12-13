@@ -156,8 +156,12 @@ body {
     grid-area: highlight;
       justify-content: flex-end;
       padding: 2rem;
+      background: linear-gradient(
+        rgba(0, 0, 0, 0), 
+        rgb(0, 0, 0)),
+        url(https://source.unsplash.com/OqtafYT5kTw/600x400);
+      
 }
-
 
 
 .story__category {
@@ -272,6 +276,25 @@ ol.story__list {
     grid-area: most-recent;
 }
 
+.recent-stories {
+    display: grid;
+    padding-top: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 1rem 1rem;
+}
+
+.most-recent .block__title {
+    padding-bottom: 1rem;
+}
+
+.most-recent::after {
+    position: absolute;
+   content: "";
+   height: 1px;
+  margin-top: 2.5rem;
+   background-color: black;
+   width: 2rem;    
+}
 
 
 
