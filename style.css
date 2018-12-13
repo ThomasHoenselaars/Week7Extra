@@ -321,3 +321,40 @@ p.story__text:hover {
       text-align: center;
     
   }
+
+  /* Responsive */
+@media screen and (max-width: 900px) {
+
+    body {
+        /* background: red; */
+        grid-template-rows: 6rem auto 2rem;
+    }
+
+    .main {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr 1fr auto auto auto auto;
+        grid-template-areas: 
+        "header"
+        "hero"
+        "featured"
+        "top-stories"
+        "special-edition"
+        "most-recent"
+        "highlight"
+
+    }
+
+    .header {
+        position: fixed;
+        min-width: 100%;
+        min-height: 10%;
+        grid-template-columns: 1fr;
+        grid-auto-flow: row;
+        grid-template-rows: auto auto;
+        justify-items: center;
+        z-index: 1;
+    }
+
+}
