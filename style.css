@@ -99,14 +99,6 @@ body {
   
 
 
-.hero, 
-.highlight, 
-.top-stories, 
-.special-edition, 
-.featured, 
-.most-recent {
-   
-}
 
 .block {
     display: flex;
@@ -190,6 +182,11 @@ body {
     
 }
 
+.top-stories .block__title {
+    padding-bottom: 1rem;
+}
+
+
 .special-edition {
     grid-area: special-edition;
 }
@@ -217,13 +214,23 @@ body {
 .featured {
     grid-area: featured;
     border: 1px solid red;
-    
+    height: 100%;
+}
+
+.featured-content {
+    border: 1px solid red;
+    display: flex;
+    height: 100%;
+    flex-flow: column nowrap;
+}
+
+.featured .block__title {
+    padding-bottom: 1rem;
 }
 
 .featured-stories {
     border: 1px solid red;
-     
-   
+    
 }
 
 .most-recent {
