@@ -115,6 +115,8 @@ body {
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
     flex-flow: column nowrap;
 }
+
+
   .hero {
       grid-area: hero;
       justify-content: flex-end;
@@ -160,7 +162,6 @@ body {
 
 .highlight {
     grid-area: highlight;
-    
       justify-content: flex-end;
       padding: 2rem;
 }
@@ -195,6 +196,14 @@ body {
 
 .featured {
     grid-area: featured;
+    border: 1px solid red;
+    
+}
+
+.featured-stories {
+    border: 1px solid red;
+     
+   
 }
 
 .most-recent {
