@@ -194,6 +194,26 @@ body {
     grid-area: special-edition;
 }
 
+.block__title--special {
+    color: white;
+    font-size: 26px;
+    margin-bottom: 2rem;
+}
+
+.block-content--special .story__text {
+    color: white;
+    max-width: 200px;
+}
+
+.block-content--special .story__text::before {
+    position: absolute;
+   content: "";
+   height: 2px;
+   margin-top: -0.8rem;
+   background-color: white;
+   width: 2rem;    
+}
+
 .featured {
     grid-area: featured;
     border: 1px solid red;
