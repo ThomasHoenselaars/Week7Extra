@@ -195,7 +195,11 @@ body {
    width: 2rem;    
 }
 
-
+ol.story__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 2rem 2rem;
+}
 
 .special-edition {
     grid-area: special-edition;
@@ -253,9 +257,11 @@ body {
 .featured-stories {
     /* border: 1px solid red; */
     height: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
+    
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-gap: 1rem 1rem;
+  
    
     
 }
