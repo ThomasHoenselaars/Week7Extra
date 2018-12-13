@@ -285,9 +285,6 @@ p.story__text:hover {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         grid-gap: 1rem 1rem;
-  
-   
-    
 }
 
 
@@ -322,6 +319,5 @@ p.story__text:hover {
   .footer {
       grid-area: footer;
       text-align: center;
-      /* background: rgba(255, 255, 255, 0.95);
-      box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1); */
+    
   }
