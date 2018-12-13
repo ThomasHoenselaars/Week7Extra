@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma,
+      Sans-Serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 1.4;
+    color: #272727;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+    display: grid;
+    grid-template-columns: 1fr minmax(auto, 1300px) 1fr;
+    grid-template-rows: auto auto 100px;
+    grid-template-areas: 
+    "header header header"
+    ". main ."
+    "footer footer footer";
+
+    }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: normal;
+    margin: 0;
+    font-size: 1.5em;
+  }
+
+  .header {
+      grid-area: header;
+      display: grid;
+      grid-auto-flow: column;
+  }
+
+  .navigation ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  }
+
+ .nav-link {
+     text-decoration: none;
+ }
+
+  .main {
+      grid-area: main;
+  }
+
+  .footer {
+      grid-area: footer;
+  }
